@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "rgFD0qfqN8E=",
+  "success": true,
+  "projectFilePath": "D:\\projetos\\UPX5\\Backend\\LevelUpApi\\LevelUpApi.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Otavi\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.4\\microsoft.aspnetcore.openapi.9.0.4.nupkg.sha512",
+    "C:\\Users\\Otavi\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}
