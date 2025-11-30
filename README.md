@@ -1,46 +1,41 @@
-# LevelUp Hardware – Frontend
-Aplicativo mobile Flutter para consulta e comparação de produtos de hardware.
+# LevelUp Hardware – Backend
+API Desenvolvida em .NET para o aplicativo LevelUp Hardware
 
-O **LevelUp Hardware** é um app criado como projeto da disciplina **UPX V da FACENS**, com o objetivo de funcionar como um “Zoom do Hardware”.
+O **LevelUp Hardware** é um aplicativo criado como projeto da disciplina **UPX V da FACENS**, com foco em criar um app de Hardware, permitindo que usuários explorem produtos, reviews, artigos, e sejam direcionados para lojas parceiras através de links afiliados.
 
-## 📱 Funcionalidades
-- Login & Cadastro
-- Exibição de produtos, artigos e reviews
-- Links afiliados para compra
-- Notificações
-- Área administrativa (para usuários admin)
+Este repositório contém o **backend** do projeto — uma API REST construída em **C# .NET**, responsável pela autenticação, persistência de dados, gerenciamento de conteúdo e integração com o frontend mobile.
 
-## 📸 Visual
+## 🚀 Funcionalidades da API
+### 👤 Autenticação & Usuários
+- Cadastro e login de usuários
+- Autenticação com JWT
+- Perfis: usuário comum e administrador
 
-[![image.png](https://i.postimg.cc/T36MY6Xt/image.png)](https://postimg.cc/56nknDyz)
+### 📰 Artigos, Reviews e Produtos
+- CRUD de produtos, artigos e reviews
+- Associação de artigos aos produtos
 
-## 🧱 Tecnologias
-- Flutter
-- Dart
-- HTTP package
-- Flutter Secure Storage
-- Gerência de estado (Provider / outra)
+### 🛒 Links de Compra Afiliados
+- Redirecionamento para lojas externas
 
-## 📁 Estrutura
+### 🛠️ Administração
+- Painel administrativo via API
+
+## 🏗️ Arquitetura
+- C# ASP.NET Core 7+
+- Entity Framework Core
+- JWT Authentication
+- Repository Pattern
+- RESTful API
+
+## ⚙️ Como Rodar
 ```
-/lib
-  /screens
-  /services
-```
-
-## ▶ Como Rodar
-```
-git clone https://github.com/Otavinhopx/UPXV-LevelUp-Hardware-FrontEnd
-cd UPXV-LevelUp-Hardware-FrontEnd
-flutter pub get
-flutter run
-```
-
-## 🔌 Configuração da API
-Editar:
-```
-lib/services/api_config.dart
+git clone https://github.com/Otavinhopx/UPXV-LevelUp-Hardware-BackEnd
+cd UPXV-LevelUp-Hardware-BackEnd
+dotnet restore
+dotnet ef database update
+dotnet run
 ```
 
 ## 📚 Sobre o Projeto
-Projeto da disciplina **UPX V – FACENS**.
+Projeto acadêmico da disciplina **UPX V – FACENS**.
